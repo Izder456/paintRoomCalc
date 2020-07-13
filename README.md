@@ -28,6 +28,6 @@ you could run it in the browser :
 
 > Ruby Version : https://paintRoomCalcRB.isaacmeyer.repl.run/
 
-> Crystal Version :
+> Crystal Version : https://paintRoomCalcCR.isaacmeyer.repl.run/
 
 
