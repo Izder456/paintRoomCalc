@@ -17,28 +17,42 @@ function getLayers(roomWidth, roomDepth, roomHeight, paintThick) {
   roomHeight = (roomHeight * 12);
   roomVol = ((roomWidth * roomDepth) * roomHeight);
   while ((roomVol >= 0)) {
+	// account for walls
     wallOne = (roomWidth * roomHeight);
     wallThree = (roomDepth * roomHeight);
     wallFive = (roomDepth * roomWidth);
+	
     wallVol = ((((wallOne * 2) + (wallThree * 2)) + wallFive) * paintThick);
     wallArea = (((wallOne * 2) + (wallThree * 2)) + wallFive);
+	
     roomWidth = (roomWidth - (paintThick * 2));
     roomDepth = (roomDepth - (paintThick * 2));
     roomHeight = (roomHeight - (paintThick * 2));
+	
+	// account for edges going up & down
     edgeUpVol = (roomHeight * Math.pow(paintThick, 2));
     edgeUpVol = (edgeUpVol * 2);
     edgeUpArea = (roomHeight * paintThick);
     edgeUpVol = (edgeUpArea * 2);
+	
+	// account for edges going side to side {on ceiling}
+	//// account for edges going side to side {depth}
     edgeSideDepthVol = (roomDepth * Math.pow(paintThick, 2));
     edgeSideDepthVol = (edgeSideDepthVol * 2);
     edgeSideDepthArea = (roomDepth * paintThick);
+	//// account for edges going side to side {width}
     edgeSideWidthVol = (roomWidth * Math.pow(paintThick, 2));
     edgeSideWidthVol = (edgeSideWidthVol * 2);
     edgeSideWidthArea = (roomWidth * paintThick);
+	
+	// add edges
     edgeVol = ((edgeUpVol + edgeSideWidthVol) + edgeSideDepthVol);
     edgeArea = ((edgeUpArea + edgeSideWidthArea) + edgeSideDepthArea);
-    roomVol = ((roomVol - wallVol) - edgeVol);
+    
+	// calculate final values
+	roomVol = ((roomVol - wallVol) - edgeVol);
     wallArea = (wallArea - edgeArea);
+	
     i += 1;
     t += wallArea;
   }
