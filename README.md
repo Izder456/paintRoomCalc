@@ -8,6 +8,7 @@ Calculate the amount of paint required to completely fill a room with layers of 
 * Ruby
 * Crystal
 * mono
+* openJDK Latest
 
 ## Usage :
 * clone this repository
