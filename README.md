@@ -23,6 +23,8 @@ Calculate the amount of paint required to completely fill a room with layers of 
 
 > to run the C# version, type `mcs paintRoomCalc.cs && mono paintRoomCalc.exe`
 
+> to run the Java version, type `javac paintRoomCalc.java && java Main`
+
 ## Or :
 you could run it in the browser :
 > Node Version : https://paintroomcalcjs.isaacmeyer.repl.run/
@@ -34,5 +36,7 @@ you could run it in the browser :
 > Crystal Version : https://paintRoomCalcCR.isaacmeyer.repl.run/
 
 > C# Version : https://paintRoomCalcCS.isaacmeyer.repl.run/
+
+> Java Version : https://paintRoomCalcJava.isaacmeyer.repl.run/
 
 
