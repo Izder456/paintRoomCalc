@@ -82,7 +82,7 @@ class Main {
 		paintThick = paintThickMil / 1000;
 		System.out.println();
 		System.out.println("Calculating...");
-
+		input.close();
 		getLayers(roomWidth, roomDepth, roomHeight, paintThick);
 	}
 }
