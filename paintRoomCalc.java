@@ -1,13 +1,14 @@
 /*
-Name : paintRoomCalc in C#
+Name : paintRoomCalc in Java
 Author : izder456
-Version : v1.0
+Version : b0.5
 License : N/A
 */
 
+import java.util.Scanner;
+import java.lang.Math; 
 
-using System;
-class MainClass {
+class Main {
     static public void getLayers(float roomWidth, float roomDepth, float roomHeight, float paintThick) {
 		float edgeArea, edgeSideDepthArea, edgeSideDepthVol, edgeSideWidthArea, edgeSideWidthVol, edgeUpArea, edgeUpVol, edgeVol, roomVol, wallArea, wallFive, wallOne, wallThree, wallVol;
 		double i = 0;
@@ -30,18 +31,18 @@ class MainClass {
 			roomHeight = (float)(roomHeight - ( paintThick * 2 ));
 			
 			// account for edges going up & down
-			edgeUpVol = (float)( roomHeight * Math.Pow(paintThick, 2) );
+			edgeUpVol = (float)( roomHeight * Math.pow(paintThick, 2) );
 		    edgeUpVol = (float)( edgeUpVol * 2 );
 			edgeUpArea = (float)( roomHeight * paintThick );
 			edgeUpVol = (float)( edgeUpArea * 2 );
 			
 			// account for edges going side to side {on ceiling}
 			//// account for edges going side to side {depth}
-			edgeSideDepthVol = (float)( roomDepth * Math.Pow(paintThick, 2) );
+			edgeSideDepthVol = (float)( roomDepth * Math.pow(paintThick, 2) );
 			edgeSideDepthVol = (float)( edgeSideDepthVol * 2 );
 			edgeSideDepthArea = (float)( roomDepth * paintThick );
 			//// account for edges going side to side {width}
-			edgeSideWidthVol = (float)( roomWidth * Math.Pow(paintThick, 2) );
+			edgeSideWidthVol = (float)( roomWidth * Math.pow(paintThick, 2) );
 			edgeSideWidthVol = (float)( edgeSideWidthVol * 2 );
 			edgeSideWidthArea = (float)( roomWidth * paintThick );
 			
@@ -56,33 +57,33 @@ class MainClass {
 			i += 1;
 			t += wallArea;
 		}
-		Console.WriteLine(i + " layers to fill your room with paint!!");
-		Console.WriteLine("& " + t / 4800 + " gallons of paint");
+		System.out.println(i + " layers to fill your room with paint!!");
+		System.out.println("& " + t / 4800 + " gallons of paint");
 	}
-	static public void Main(string[] args) {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
 		float roomWidth, roomDepth, roomHeight, paintThickMil; 
 		float paintThick;
-		Console.WriteLine("Paint Layer Calculator");
-		Console.WriteLine("by : izder456");
-		Console.WriteLine();
+		System.out.println("Paint Layer Calculator");
+		System.out.println("by : izder456");
+		System.out.println();
 		
 		//get input for room dimentions
-		Console.Write("Room Width in Feet? ");
-		roomWidth = float.Parse(Console.ReadLine());
-		Console.Write("Room Depth in Feet? ");
-		roomDepth = float.Parse(Console.ReadLine());
-		Console.Write("Room Height in Feet? ");
-		roomHeight = float.Parse(Console.ReadLine());
-		Console.WriteLine();
-		Console.WriteLine("1 mil is 1/1000 of an inch");
-		Console.Write("Paint Thickness in Mils? ");
-		paintThickMil = float.Parse(Console.ReadLine());
+		System.out.print("Room Width in Feet? ");
+		roomWidth = input.nextFloat();
+		System.out.print("Room Depth in Feet? ");
+		roomDepth =  input.nextFloat();
+		System.out.print("Room Height in Feet? ");
+		roomHeight = input.nextFloat();
+		System.out.println();
+		System.out.println("1 mil is 1/1000 of an inch");
+		System.out.print("Paint Thickness in Mils? ");
+		paintThickMil = input.nextFloat();
 		paintThick = paintThickMil / 1000;
-		Console.WriteLine();
-		Console.WriteLine("Calculating...");
+		System.out.println();
+		System.out.println("Calculating...");
 
 		getLayers(roomWidth, roomDepth, roomHeight, paintThick);
-		Console.ReadKey();
 	}
 }
 
