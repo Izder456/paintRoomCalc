@@ -3,11 +3,11 @@ Calculate the amount of paint required to completely fill a room with layers of 
 
 ## Dependancies :
 * Unix-like terminal access
-* node.js 10.x && npm
+* node.js LTS && npm
 * Python 3.8
 * Ruby
 * Crystal
-* mono
+* mono c# compiler
 * openJDK Latest
 
 ## Usage :
