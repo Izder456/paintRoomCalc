@@ -16,7 +16,7 @@ Calculate the amount of paint required to completely fill a room with layers of 
 
 > to run the node.js version, type `npm install prompt-sync && npm install colors && node paintRoomCalc.js`
 
-> to run the Python 3.8 version, type `Python3 paintRoomCalc.py`
+> to run the Python 3.8 version, type `python3 paintRoomCalc.py`
 
 > to run the ruby version (very slow), type `ruby paintRoomCalc.rb`
 
