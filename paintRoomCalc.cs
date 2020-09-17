@@ -7,7 +7,7 @@ License : N/A
 
 
 using System;
-class MainClass {
+class paintRoomCalc {
     static public void getLayers(float roomWidth, float roomDepth, float roomHeight, float paintThick) {
 		float edgeArea, edgeSideDepthArea, edgeSideDepthVol, edgeSideWidthArea, edgeSideWidthVol, edgeUpArea, edgeUpVol, edgeVol, roomVol, wallArea, wallFive, wallOne, wallThree, wallVol;
 		double i = 0;
