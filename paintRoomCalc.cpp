@@ -1,9 +1,10 @@
 ﻿/*
 Name : paintRoomCalc in C++
 Author : Аїӡек Меѥҏ
-Version : b0.1
+Version : b1.0
 License : N/A
 */
+
 #include <cmath>
 #include <iostream>
 using namespace std;
