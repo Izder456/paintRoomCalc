@@ -1,7 +1,7 @@
 ﻿/*
 Name : paintRoomCalc in C++
 Author : Аїӡек Меѥҏ
-Version : b1.0
+Version : v1.0
 License : N/A
 */
 
