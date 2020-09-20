@@ -1,7 +1,7 @@
 # paintRoomCalc :
 Calculate the amount of paint required to completely fill a room with layers of dried paint
 
-## Dependancies :
+## Dependencies :
 * Unix-like terminal access
 * node.js LTS && npm
 * Python 3.8
