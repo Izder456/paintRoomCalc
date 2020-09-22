@@ -9,7 +9,7 @@ Calculate the amount of paint required to completely fill a room with layers of 
 * Crystal
 * mono c# compiler
 * openJDK Latest
-* Latest C++ compiler [ clang++ or gnu-cpp ]
+* Latest C/CXX compiler [ clang or gnu-c ]
 
 ## Usage :
 * clone this repository
@@ -31,6 +31,10 @@ Calculate the amount of paint required to completely fill a room with layers of 
 
 > to run the C++ versiob with gnu-cpp, type `g++ paintRoomCalc.cpp -o paintRoomCalc && ./paintRoomCalc`
 
+> to run the C version with clang, type `clang paintRoomCalc.c -o paintRoomCalc && ./paintRoomCalc`
+
+> to run the C version with gnu-c, tpye `gcc paintRoomCalc.c -o paintRoomCalc && ./paintRoomCalc`
+
 ## Or :
 you could run it in the browser :
 > Node Version : https://paintroomcalcjs.isaacmeyer.repl.run/
@@ -46,4 +50,6 @@ you could run it in the browser :
 > Java Version : https://paintRoomCalcJava.isaacmeyer.repl.run/
 
 > C++ Version : https://paintRoomCalcCPP.isaacmeyer.repl.run/
+
+> C Version : https://paintRoomCalcC.isaacmeyer.repl.run/
 

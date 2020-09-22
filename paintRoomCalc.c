@@ -1,7 +1,7 @@
 /*
 Name : paintRoomCalc in C
 Author : Аїӡек Меѥҏ
-Version : b0.1
+Version : v1.0
 License : N/A
 */
 
