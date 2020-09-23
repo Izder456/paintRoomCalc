@@ -59,7 +59,7 @@ void getLayers(float roomWidth, float roomDepth, float roomHeight, float paintTh
         t += wallArea;
     }
     printf("%f layers to fill your room with paint!!\n",i);
-    printf("& %f gallons of paint",((float)t/(float)4800));
+    printf("& %f gallons of paint\n",((float)t/(float)4800));
 };
 
 int main() {
