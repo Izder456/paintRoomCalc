@@ -84,7 +84,8 @@ int main() {
     printf("Calculating...\n");
 
     getLayers(roomWidth, roomDepth, roomHeight, paintThick);
-    while(!getchar());
+    while(getchar() != '\n');
+    getchar();
 
     return 0;
 };
