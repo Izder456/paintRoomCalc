@@ -31,7 +31,7 @@ class paintRoomCalc {
 			
 			// account for edges going up & down
 			edgeUpVol = (float)( roomHeight * Math.Pow(paintThick, 2) );
-		    edgeUpVol = (float)( edgeUpVol * 2 );
+			edgeUpVol = (float)( edgeUpVol * 2 );
 			edgeUpArea = (float)( roomHeight * paintThick );
 			edgeUpVol = (float)( edgeUpArea * 2 );
 			

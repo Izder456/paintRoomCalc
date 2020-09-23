@@ -9,7 +9,7 @@ License : N/A
 #include <iostream>
 using namespace std;
 
-static void getLayers(float roomWidth, float roomDepth, float roomHeight, float paintThick) {
+void getLayers(float roomWidth, float roomDepth, float roomHeight, float paintThick) {
     float edgeArea, edgeSideDepthArea, edgeSideDepthVol, edgeSideWidthArea, edgeSideWidthVol, edgeUpArea, edgeUpVol, edgeVol, roomVol, wallArea, wallFive, wallOne, wallThree, wallVol;
     double i;
     double t;
