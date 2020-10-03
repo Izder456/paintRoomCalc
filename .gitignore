@@ -3,4 +3,5 @@ package-lock.json
 *.out
 *.class
 *.exe
+*.d
 paintRoomCalc
