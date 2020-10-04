@@ -36,7 +36,7 @@ Calculate the amount of paint required to completely fill a room with layers of 
 
 > to run the C version with gnu-c, type `gcc paintRoomCalc.c -o paintRoomCalc && ./paintRoomCalc`
 
-> to run the Obj-C version, type `gcc $(gnustep-config --objc-flags) -o paintRoomCalc painRoomCalc.m $(gnustep-config --base-libs)`
+> to run the Obj-C version, type `gcc $(gnustep-config --objc-flags) -o paintRoomCalc paintRoomCalc.m $(gnustep-config --base-libs)`
 
 ## Or :
 you could run it in the browser :
