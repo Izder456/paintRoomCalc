@@ -1,13 +1,11 @@
-"use strict";
-exports.__esModule = true;
 /*
 Name : paintRoomCalc in TypeScript
 Author : Аїӡек Меѥҏ
 Version : v1.0
 License : N/A
 */
-var promptSync = require("prompt-sync");
-var prompt = promptSync();
+import promptSync = require('prompt-sync');
+const prompt = promptSync();
 function getLayers(roomWidth, roomDepth, roomHeight, paintThick) {
     var edgeArea, edgeSideDepthArea, edgeSideDepthVol, edgeSideWidthArea, edgeSideWidthVol, edgeUpArea, edgeUpVol, edgeVol, i, roomVol, t, wallArea, wallFive, wallOne, wallThree, wallVol;
     i = 0;
@@ -55,17 +53,17 @@ function getLayers(roomWidth, roomDepth, roomHeight, paintThick) {
 console.log("Paint Layer Calculator");
 console.log("by : Аїӡек Меѥҏ");
 console.log("\n");
-var roomWidth = prompt("Room Width in Feet? ");
+let roomWidth = prompt("Room Width in Feet? ");
 roomWidth = Number(roomWidth);
-var roomDepth = prompt("Room Depth in Feet? ");
+let roomDepth = prompt("Room Depth in Feet? ");
 roomDepth = Number(roomDepth);
-var roomHeight = prompt("Room Height in Feet? ");
+let roomHeight = prompt("Room Height in Feet? ");
 roomHeight = Number(roomHeight);
 console.log("\n");
 console.log("1 mil is 1/1000 of an inch");
-var paintThickMil = prompt("Paint Thickness in Mils? ");
+let paintThickMil = prompt("Paint Thickness in Mils? ");
 paintThickMil = Number(paintThickMil);
-var paintThick = (paintThickMil / 1000);
+let paintThick = (paintThickMil / 1000);
 console.log("\n");
 console.log("Calculating...");
 getLayers(roomWidth, roomDepth, roomHeight, paintThick);

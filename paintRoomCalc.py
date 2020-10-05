@@ -5,8 +5,6 @@ Version : v1.0
 License : N/A
 '''
 
-from colorama import Fore, Back, Style
-
 def getLayers(roomWidth, roomDepth, roomHeight, paintThick):
     i = 0
     t = 0
@@ -56,7 +54,7 @@ def getLayers(roomWidth, roomDepth, roomHeight, paintThick):
 
         i += 1
         t += wallArea
-    print(Style.RESET_ALL + Fore.LIGHTMAGENTA_EX + str(i) +
+    print(str(i) +
           " layers to fill your room with paint!!")
     print("& " + str(t / (4800)) + " gallons of paint")
 
@@ -71,11 +69,10 @@ roomHeight = input("Room Height in Feet? ")
 roomHeight = int(roomHeight)
 
 print("\n")
-print(Style.RESET_ALL + Fore.RED + "1 mil is 1/1000 of an inch")
-paintThickMil = input(Style.RESET_ALL + Fore.BLUE +
-                      "Paint Thickness in Mils? ")
+print("1 mil is 1/1000 of an inch")
+paintThickMil = input("Paint Thickness in Mils? ")
 paintThickMil = int(paintThickMil)
 paintThick = paintThickMil / 1000
 print("\n")
-print(Fore.GREEN + Back.BLACK + "Calculating...")
+print("Calculating...")
 getLayers(roomWidth, roomDepth, roomHeight, paintThick)

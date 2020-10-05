@@ -11,6 +11,7 @@ Calculate the amount of paint required to completely fill a room with layers of 
 * openJDK Latest
 * Latest C/CXX compiler [ clang or gnu-c ]
 * Latest Objective-C compiler [ gobjc ]
+* ts-node TypeScript Node Runtime [ `sudo npm install -g ts-node typescript` ]
 
 ## Usage :
 * clone this repository
@@ -38,6 +39,8 @@ Calculate the amount of paint required to completely fill a room with layers of 
 
 > to run the Obj-C version, type `gcc $(gnustep-config --objc-flags) -o paintRoomCalc paintRoomCalc.m $(gnustep-config --base-libs)`
 
+> to run the TypeScript version, type `ts-node paintRoomCalc.ts`
+
 ## Or :
 you could run it in the browser :
 > Node Version : https://paintroomcalcjs.isaacmeyer.repl.run/
@@ -55,4 +58,6 @@ you could run it in the browser :
 > C++ Version : https://paintRoomCalcCPP.isaacmeyer.repl.run/
 
 > C Version : https://paintRoomCalcC.isaacmeyer.repl.run/
+
+> TypeScript Version : https://paintRoomCalcts.isaacmeyer.repl.run/
 
