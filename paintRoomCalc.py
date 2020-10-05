@@ -58,10 +58,9 @@ def getLayers(roomWidth, roomDepth, roomHeight, paintThick):
           " layers to fill your room with paint!!")
     print("& " + str(t / (4800)) + " gallons of paint")
 
-print(Fore.LIGHTGREEN_EX + Back.BLACK + "Paint Layer Calculator")
+print("Paint Layer Calculator")
 print("by : Аїӡек Меѥҏ")
-print(Style.RESET_ALL)
-roomWidth = input(Fore.BLUE + "Room Width in Feet? ")
+roomWidth = input("Room Width in Feet? ")
 roomWidth = int(roomWidth)
 roomDepth = input("Room Depth in Feet? ")
 roomDepth = int(roomDepth)
