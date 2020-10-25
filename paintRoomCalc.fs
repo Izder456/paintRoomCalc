@@ -73,7 +73,7 @@ let getLayers (rW:float) (rD:float) (rH:float) (pT:float) : float list =
     
 
 Console.WriteLine("Paint Layer Calculator");
-Console.WriteLine("by : Аїӡек Меѥҏ");
+Console.WriteLine("by : izder456");
 Console.WriteLine();
 
 //get input for room dimentions
