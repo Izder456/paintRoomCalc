@@ -7,7 +7,7 @@ Calculate the amount of paint required to completely fill a room with layers of 
 * Python 3.8
 * Ruby
 * Crystal
-* mono c# compiler
+* mono C# & F# compiler
 * openJDK Latest
 * Latest C/CXX compiler [ clang or gnu-c ]
 * Latest Objective-C compiler [ gobjc ]
@@ -26,6 +26,8 @@ Calculate the amount of paint required to completely fill a room with layers of 
 > to run the crystal version (blazing fast), type `crystal build paintRoomCalc.cr && ./paintRoomCalc`
 
 > to run the C# version, type `mcs paintRoomCalc.cs && mono paintRoomCalc.exe`
+
+> to run the F# version, type `fsharpc paintRoomCalc.fs && mono paintRoomCalc.exe`
 
 > to run the Java version, type `javac paintRoomCalc.java && java Main`
 
@@ -52,6 +54,8 @@ you could run it in the browser :
 > Crystal Version : https://paintRoomCalcCR.isaacmeyer.repl.run/
 
 > C# Version : https://paintRoomCalcCS.isaacmeyer.repl.run/
+
+> F# Version : https://paintRoomCalcFS.isaacmeyer.repl.run
 
 > Java Version : https://paintRoomCalcJava.isaacmeyer.repl.run/
 
