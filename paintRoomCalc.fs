@@ -70,27 +70,28 @@ let getLayers (rW:float) (rD:float) (rH:float) (pT:float) : float list =
         t <- (float wallArea) + (float t);
     [float i; t];
 
-    
+[<EntryPoint>]    
+let main argv =
+    Console.WriteLine("Paint Layer Calculator");
+    Console.WriteLine("by : izder456");
+    Console.WriteLine();
 
-Console.WriteLine("Paint Layer Calculator");
-Console.WriteLine("by : izder456");
-Console.WriteLine();
+    //get input for room dimentions
+    Console.Write("Room Width in Feet? ");
+    let roomWidthI:float = float(Console.ReadLine());
+    Console.Write("Room Depth in Feet? ");
+    let roomDepthI:float = float(Console.ReadLine());
+    Console.Write("Room Height in Feet? ");
+    let roomHeightI:float = float(Console.ReadLine());
+    Console.WriteLine();
+    Console.WriteLine("1 mil is 1/1000 of an inch");
+    Console.Write("Paint Thickness in Mils? ");
+    let mutable paintThickI:float = float(Console.ReadLine());
+    paintThickI <- float(paintThickI / 1000.0);
+    Console.WriteLine();
+    Console.WriteLine("Calculating...");
 
-//get input for room dimentions
-Console.Write("Room Width in Feet? ");
-let roomWidthI:float = float(Console.ReadLine());
-Console.Write("Room Depth in Feet? ");
-let roomDepthI:float = float(Console.ReadLine());
-Console.Write("Room Height in Feet? ");
-let roomHeightI:float = float(Console.ReadLine());
-Console.WriteLine();
-Console.WriteLine("1 mil is 1/1000 of an inch");
-Console.Write("Paint Thickness in Mils? ");
-let mutable paintThickI:float = float(Console.ReadLine());
-paintThickI <- float(paintThickI / 1000.0);
-Console.WriteLine();
-Console.WriteLine("Calculating...");
-
-let answer = getLayers roomWidthI roomDepthI roomHeightI paintThickI;
-Console.WriteLine((string answer.[0]) + " layers to fill your room with paint!!");
-Console.WriteLine("& " + (string (answer.[1] / 4800.0)) + " gallons of paint");
+    let answer = getLayers roomWidthI roomDepthI roomHeightI paintThickI;
+    Console.WriteLine((string answer.[0]) + " layers to fill your room with paint!!");
+    Console.WriteLine("& " + (string (answer.[1] / 4800.0)) + " gallons of paint");
+    0;
