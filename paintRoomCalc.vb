@@ -12,11 +12,8 @@ Module Program
 		Dim i = 0
 		Dim t = 0.0
 		roomWidth = roomWidth * 12
-		Console.WriteLine(roomWidth)
 		roomDepth = roomDepth * 12
-		Console.WriteLine(roomDepth)
 		roomHeight = roomHeight * 12
-		Console.WriteLine(roomHeight)
 		Dim edgeArea As Decimal = 0.0
 		Dim edgeSideDepthArea As Decimal = 0.0
 		Dim edgeSideDepthVol As Decimal = 0.0
