@@ -1,6 +1,6 @@
 =begin
 Name : paintRoomCalc in Ruby
-Author : Аїӡек Меѥҏ
+Author : izder456
 Version : v1.0
 License : N/A
 =end

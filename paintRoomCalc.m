@@ -1,7 +1,7 @@
 /*
 Name : paintRoomCalc in Objective-C
-Author : Аїӡек Меѥҏ
-Version : b0.1
+Author : izder456
+Version : v1.0
 License : N/A
 */
 

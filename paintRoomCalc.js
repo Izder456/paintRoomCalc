@@ -2,7 +2,7 @@
 exports.__esModule = true;
 /*
 Name : paintRoomCalc in TypeScript
-Author : Аїӡек Меѥҏ
+Author : izder456
 Version : v1.0
 License : N/A
 */
