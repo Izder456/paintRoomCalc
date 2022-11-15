@@ -45,25 +45,3 @@ Calculate the amount of paint required to completely fill a room with layers of 
 
 > to run the TypeScript version, type `ts-node paintRoomCalc.ts`
 
-## Or :
-you could run it in the browser :
-> Node Version : https://paintroomcalcjs.isaacmeyer.repl.run/
-
-> Python3 Version : https://paintroomcalc.isaacmeyer.repl.run/
-
-> Ruby Version : https://paintRoomCalcRB.isaacmeyer.repl.run/
-
-> Crystal Version : https://paintRoomCalcCR.isaacmeyer.repl.run/
-
-> C# Version : https://paintRoomCalcCS.isaacmeyer.repl.run/
-
-> F# Version : https://paintRoomCalcFS.isaacmeyer.repl.run
-
-> Java Version : https://paintRoomCalcJava.isaacmeyer.repl.run/
-
-> C++ Version : https://paintRoomCalcCPP.isaacmeyer.repl.run/
-
-> C Version : https://paintRoomCalcC.isaacmeyer.repl.run/
-
-> TypeScript Version : https://paintRoomCalcts.isaacmeyer.repl.run/
-
