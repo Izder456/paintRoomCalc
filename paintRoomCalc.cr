@@ -61,7 +61,7 @@ end
 
 
 puts "Paint Layer Calculator"
-puts "by : Аїӡек Меѥҏ"
+puts "by : izder456"
 
 print "Room Width in Feet? "
 roomWidth = gets.not_nil!.chomp

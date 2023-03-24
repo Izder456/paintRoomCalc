@@ -33,13 +33,13 @@ Calculate the amount of paint required to completely fill a room with layers of 
 
 > to run the Java version, type `javac paintRoomCalc.java && java Main`
 
-> to run the C++ version with clang, type `clang++ paintRoomCalc.cpp -o paintRoomCalc && ./paintRoomCalc`
+> to run the C++ version with clang, type `clang++ -lm paintRoomCalc.cpp -o paintRoomCalc && ./paintRoomCalc`
 
-> to run the C++ versiob with gnu-cpp, type `g++ paintRoomCalc.cpp -o paintRoomCalc && ./paintRoomCalc`
+> to run the C++ versiob with gnu-cpp, type `g++ -lm paintRoomCalc.cpp -o paintRoomCalc && ./paintRoomCalc`
 
-> to run the C version with clang, type `clang paintRoomCalc.c -o paintRoomCalc && ./paintRoomCalc`
+> to run the C version with clang, type `clang -lm paintRoomCalc.c -o paintRoomCalc && ./paintRoomCalc`
 
-> to run the C version with gnu-c, type `gcc paintRoomCalc.c -o paintRoomCalc && ./paintRoomCalc`
+> to run the C version with gnu-c, type `gcc -lm paintRoomCalc.c -o paintRoomCalc && ./paintRoomCalc`
 
 > to run the Obj-C version, type `gcc $(gnustep-config --objc-flags) -o paintRoomCalc paintRoomCalc.m $(gnustep-config --base-libs)`
 

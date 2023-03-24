@@ -1,6 +1,6 @@
 '''
 Name : paintRoomCalc in Python 3.8
-Author : Аїӡек Меѥҏ
+Author : izder456 
 Version : v1.0
 License : N/A
 '''
@@ -59,7 +59,7 @@ def getLayers(roomWidth, roomDepth, roomHeight, paintThick):
     print("& " + str(t / (4800)) + " gallons of paint")
 
 print("Paint Layer Calculator")
-print("by : Аїӡек Меѥҏ")
+print("by : izder456")
 roomWidth = input("Room Width in Feet? ")
 roomWidth = int(roomWidth)
 roomDepth = input("Room Depth in Feet? ")

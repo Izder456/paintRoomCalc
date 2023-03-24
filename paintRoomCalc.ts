@@ -51,7 +51,7 @@ function getLayers(roomWidth, roomDepth, roomHeight, paintThick) {
     console.log(("& " + (t / 4800).toString()) + " gallons of paint");
 }
 console.log("Paint Layer Calculator");
-console.log("by : Аїӡек Меѥҏ");
+console.log("by : izder456");
 console.log("\n");
 let roomWidth = prompt("Room Width in Feet? ");
 roomWidth = Number(roomWidth);
