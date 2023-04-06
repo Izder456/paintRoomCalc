@@ -2,7 +2,7 @@
 Name : paintRoomCalc in F#
 Author : izder456
 Version : n1.0
-License : N/A
+License : WTFPL
 *)
 
 // Open System I/O

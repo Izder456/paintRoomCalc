@@ -1,3 +1,10 @@
+##################################
+# Name : paintRoomCalc in crystal
+# Author : izder456
+# Version : n1.0
+# License : WTFPL
+#################################
+
 # Define a function to prompt the user for input and return their response
 def prompt_user(message)
   puts message
