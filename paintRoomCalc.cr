@@ -1,83 +1,27 @@
-##################################
-#Name : paintRoomCalc in Crystal
-#Author : izder456
-#Version : v1.0
-#License : N/A
-##################################
-
-def getLayers(roomWidth, roomDepth, roomHeight, paintThick)
-  i = 0
-  t = 0
-  roomWidth = roomWidth * 12
-  roomDepth = roomDepth * 12
-  roomHeight = roomHeight * 12
-  roomVol = roomWidth * roomDepth * roomHeight
-  while roomVol >= 0
-    #account for walls
-    wallOne = roomWidth * roomHeight
-    #print("wallWidth : "+str(wallOne))
-    wallThree = roomDepth * roomHeight
-    #print("wallDepth : "+str(wallThree))
-    wallFive = roomDepth * roomWidth
-    #print("wallCeil : "+str(wallFive))
-
-    wallVol = (wallOne * 2 + wallThree * 2 + wallFive) * paintThick
-    wallArea = wallOne * 2 + wallThree * 2 + wallFive
-
-    roomWidth = roomWidth - (paintThick * 2)
-    roomDepth = roomDepth - (paintThick * 2)
-    roomHeight = roomHeight - (paintThick * 2)
-
-    #account for edges going up & down
-    edgeUpVol = roomHeight*paintThick**2
-    edgeUpVol = edgeUpVol*2
-    edgeUpArea = roomHeight*paintThick
-    edgeUpVol = edgeUpArea*2
-
-    #account for edges going side to side {on ceiling}
-    ##account for edges going side to side {depth}
-    edgeSideDepthVol = (roomDepth*paintThick**2)
-    edgeSideDepthVol = edgeSideDepthVol*2
-    edgeSideDepthArea = (roomDepth*paintThick)
-    ##account for edges going side to side {width}
-    edgeSideWidthVol = roomWidth*paintThick**2
-    edgeSideWidthVol = edgeSideWidthVol*2
-    edgeSideWidthArea = roomWidth*paintThick
-
-    #add edges
-    edgeVol = edgeUpVol+edgeSideWidthVol+edgeSideDepthVol
-    edgeArea = edgeUpArea+edgeSideWidthArea+edgeSideDepthArea
-
-    #calculate final values
-    roomVol = roomVol - wallVol - edgeVol
-    wallArea = wallArea - edgeArea
-
-    i += 1
-    t += wallArea
-  end
-  puts i.to_s + " layers to fill your room with paint!!"
-  puts "& " + (t / (4800)).to_s + " gallons of paint"
+# Define a function to prompt the user for input and return their response
+def prompt_user(message)
+  puts message
+  read_line 
 end
 
+# Define a function to calculate the number of layers needed to fill the room
+def calculate_num_layers(width, depth, height, layer_thickness)
+  # Calculate the volume of the room (disregarding the floor)
+  volume = width * depth * (height - layer_thickness)
+  # Round up to the nearest integer to get the number of layers needed
+  (volume / layer_thickness).ceil
+end
 
-puts "Paint Layer Calculator"
-puts "by : izder456"
+# Prompt the user for the room dimensions and layer thickness, and convert the input to floats
+width = prompt_user("Enter the width of the room (in feet):").to_f
+depth = prompt_user("Enter the depth of the room (in feet):").to_f
+height = prompt_user("Enter the height of the room (in feet):").to_f
+layer_thickness = prompt_user("Enter the thickness of each layer (in mils):").to_f / 12000.0
 
-print "Room Width in Feet? "
-roomWidth = gets.not_nil!.chomp
-roomWidth = roomWidth.to_i
-print "Room Depth in Feet? "
-roomDepth = gets.not_nil!.chomp
-roomDepth = roomDepth.to_i
-print "Room Height in Feet? "
-roomHeight = gets.not_nil!.chomp
-roomHeight = roomHeight.to_i
-puts "1 mil is 1/1000 of an inch"
-print "Paint Thickness in Mils? "
-paintThickMil = gets.not_nil!.chomp
-paintThickMil = paintThickMil.to_i
-paintThick = paintThickMil / 1000
-puts ""
-puts "Calculating..."
-getLayers(roomWidth, roomDepth, roomHeight, paintThick)
+# Calculate the number of layers needed to fill the room
+num_layers = calculate_num_layers(width, depth, height, layer_thickness)
 
+layer_thickness_R = (layer_thickness * 1000.0).format(decimal_places: 2)
+
+# Print the result to the console
+puts "To completeliy fill a room with dimensions #{width} x #{depth} x #{height} feet using ~#{layer_thickness_R}-inch-thick layers of paint, you would need #{num_layers} layers."
