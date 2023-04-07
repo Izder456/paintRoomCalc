@@ -2,7 +2,7 @@
 
 i have a math/geometry problem, and it want to solve it algorithmically.
 
-its a program that takes user input for the dimensions of a room in US imperial, as well as the average paint layer thickness in mils (which is a really obscure measurement thats 1/1000 of an inch).
+its a program that takes user input for the dimensions of a room in US imperial, as well as the average paint layer thickness in mils (which is a fairly obscure measurement thats 1/1000 of an inch).
 
 the question is how many layers of paint can one put in this room until the entire volume of the room is filled with layers of dried paint?
 
