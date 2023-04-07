@@ -39,11 +39,12 @@ def calculate_num_layers(width, depth, height, layer_thickness)
     room_volume = width * depth * height
     # Set num_layer to zero
     num_layer = 0
+    # Set current paintable dimensions
     curr_width = width
     curr_depth = depth
     curr_height = height
     curr_room_volume = room_volume
-    # Iterate layers of paint until volume is zero or less than
+    # Iterate layers of paint until volume is zero or negative
     until curr_room_volume <= 0
         # Calculate volume taken by walls
         wall_vol_NS = calculate_wall_vol(curr_width, height, layer_thickness)
@@ -54,11 +55,11 @@ def calculate_num_layers(width, depth, height, layer_thickness)
         # Add volume taken by walls and ceiling & remove from current room volume
         vol_Tot = ceil_vol_Tot + wall_vol_Tot
         curr_room_volume -= vol_Tot
-        # accomodate for lost paintable area
+        # Account for lost paintable area
         curr_width -= layer_thickness * 2
         curr_depth -= layer_thickness * 2
         curr_height -= layer_thickness
-        # add 1 to iterable num_layer
+        # Add 1 to iterable variable num_layer
         num_layer += 1
     end
     num_layer
