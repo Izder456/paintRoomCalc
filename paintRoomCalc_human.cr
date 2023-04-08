@@ -39,7 +39,7 @@ def calculate_num_layers(width : Float64, depth : Float64, height : Float64, lay
   curr_width, curr_depth, curr_height = width, depth, height
   curr_room_volume = room_volume
   # Iterate layers of paint until volume is zero or negative
-  until curr_room_volume <= 0
+  until curr_room_volume.floor <= 0
     # Calculate volume taken by walls
     wall_vol_NS = calculate_wall_vol(curr_width, height, layer_thickness)
     wall_vol_EW = calculate_wall_vol(curr_depth, height, layer_thickness)
