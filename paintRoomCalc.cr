@@ -29,4 +29,4 @@ layer_thickness = prompt_user("Enter the thickness of each layer (in mils):").to
 num_layers = calculate_num_layers(width, depth, height, layer_thickness)
 
 # Print the result to the console
-puts "To completeliy fill a room with dimensions #{width} x #{depth} x #{height} feet using ~#{layer_thickness}-mil-thick layers of paint, you would need #{num_layers} layers."
+puts "To completeliy fill a room with dimensions #{width} x #{depth} x #{height} feet using dried layers of paint, you would need #{num_layers} layers."

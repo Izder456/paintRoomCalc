@@ -19,7 +19,7 @@ def calculate_wall_vol(wall_h, wall_w, layer_thickness)
     # Account for lost paintable face area
     wall_area -= wall_h * layer_thickness
     # Calculate painted wall volume
-    wall_volume = wall_area * layer_thickness
+    wall_area * layer_thickness
 end
 
 # Define a function to calculate the volume taken by one layer of paint on the ceiling
@@ -30,7 +30,7 @@ def calculate_ceil_vol(ceil_l, ceil_w, layer_thickness)
     # Account for lost paintable face area
     ceil_area -= (2. * (ceil_l * layer_thickness) + 2. * (ceil_w * layer_thickness)) - (layer_thickness ** 2)
     # Calculate painted wall volume
-    ceil_volume = ceil_area * layer_thickness
+    ceil_area * layer_thickness
 end
 
 # Define a function to calculate the number of layers needed to fill the room
@@ -75,4 +75,4 @@ layer_thickness = prompt_user("Enter the thickness of each layer (in mils):").to
 num_layers = calculate_num_layers(width, depth, height, layer_thickness)
 
 # Print the result to the console
-puts "To completeliy fill a room with dimensions #{width} x #{depth} x #{height} feet using ~#{layer_thickness}-inch-thick layers of paint, you would need #{num_layers} layers."
+puts "To completeliy fill a room with dimensions #{width} x #{depth} x #{height} feet using dried layers of paint, you would need #{num_layers} layers."
